@@ -23,5 +23,9 @@
 *.x86_64
 *.hex
 
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
 # Upstream files
 /FreeRTOS*
