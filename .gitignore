@@ -7,6 +7,7 @@
 # Libraries
 *.lib
 *.a
+*.rlib
 
 # Shared objects (inc. Windows DLLs)
 *.dll
@@ -21,3 +22,6 @@
 *.i*86
 *.x86_64
 *.hex
+
+# Upstream files
+/FreeRTOS*
