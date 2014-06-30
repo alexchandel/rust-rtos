@@ -22,3 +22,26 @@ struct Queue {
 	tx_lock: QueueLock,
 
 }
+
+impl Queue {
+	fn create(length: uint, item_size: uint, queue_type: u8) -> Queue {
+		new_queue: Queue;
+		size: uint;
+
+		/* Create the list of pointers to queue items.  The queue is one byte
+		longer than asked for to make wrap checking easier/faster. */
+		size = length * item_size + 1;
+
+		// if length > 0
+		new_queue = Queue {
+			head: [0u8, ..size], // TODO box
+			tail: &head[head.len() - 1],
+			write_to: head,
+
+			length: length,
+			item_size: item_size
+		};
+
+		return new_queue
+	}
+}

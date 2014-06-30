@@ -1,4 +1,5 @@
 
+#[cfg(target_arch="mipsel")]
 mod port
 {
 
@@ -6,7 +7,7 @@ mod port
 
 
 /* heap_4.rs */
-
+#[cfg(target_arch="mipsel")]
 mod port
 {
 	struct BlockLink {

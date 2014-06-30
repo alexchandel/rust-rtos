@@ -1,4 +1,4 @@
-#![crate_id = "RustRTOS#0.0.1-pre"]
+#![crate_id = "rtos#0.0.0"]
 #![license = "GPLv3"]
 #![crate_type = "lib"]
 #![no_std]

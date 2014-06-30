@@ -3,6 +3,7 @@ RustRTOS
 
 RustRTOS is FreeRTOSv8.0.1 rewritten in Rust for the PIC32MX target, and eventually for the x86, ARM, and MSP430 targets as well.
 
+Any help is appreciated, so feel free to contribute!
 
 ## Developer Quick Start
 
